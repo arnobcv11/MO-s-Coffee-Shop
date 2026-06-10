@@ -1,0 +1,101 @@
+<!-- Mohammad Rahman - CS 310 Lab 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mo's Coffee Shop | Customer Information</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="logo.svg" alt="Mo's Coffee Shop Logo">
+        <h1>Mo's Coffee Shop</h1>
+    </div>
+    
+<nav>
+  <a href="index.html">Home</a>
+  <a href="contact.html">Contact</a>
+  <a href="menu.html">Menu</a>
+  <a href="order.html">Order Online</a>
+  <a href="career.html">Career</a>
+    <a href="customer-info.html">Customer Information</a>
+</nav>
+
+</header>
+
+<main>
+<section class="customer-page">
+    <h2 class="section-title">Customer Information</h2>
+
+    <form class="customer-form">
+        <h3>Create Customer Account</h3>
+
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password">
+    </form>
+
+    <form class="customer-form">
+        <h3>Location & Preferences</h3>
+
+        <label for="state">State</label>
+        <input list="states" id="state" name="state" placeholder="Choose or type your state">
+        <datalist id="states">
+            <option value="New Jersey">
+            <option value="New York">
+            <option value="Pennsylvania">
+            <option value="Delaware">
+            <option value="Maryland">
+        </datalist>
+
+        <label for="country">Country</label>
+        <input list="countries" id="country" name="country" placeholder="Choose or type your country">
+        <datalist id="countries">
+            <option value="United States">
+            <option value="Canada">
+            <option value="Bangladesh">
+            <option value="United Kingdom">
+            <option value="India">
+        </datalist>
+
+        <label for="favorite-drink">Favorite Coffee Drink</label>
+        <input list="coffee-drinks" id="favorite-drink" name="favorite-drink" placeholder="Choose or type your favorite drink">
+        <datalist id="coffee-drinks">
+            <option value="Espresso">
+            <option value="Latte">
+            <option value="Cappuccino">
+            <option value="Mocha">
+            <option value="Cold Brew">
+            <option value="Iced Coffee">
+        </datalist>
+
+        <button type="button" id="submitCustomer">Submit Information</button>
+    </form>
+</section>
+
+<section class="customer-results">
+    <h2 class="section-title">Submitted Customer Data</h2>
+    <p>After submitting the form, customer information will appear below and in the browser console.</p>
+    <div id="customerOutput" class="output-box">No customer data submitted yet.</div>
+</section>
+
+</main>
+
+<footer>
+    <small>Mohammad Rahman | Website: <a href="https://arnobcv11.github.io/MO-s-Coffee-Shop/">GitHub Pages</a></small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

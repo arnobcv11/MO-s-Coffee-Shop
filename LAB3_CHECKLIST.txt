@@ -1,0 +1,13 @@
+CS 310 Lab 3 Checklist - Mohammad Rahman
+
+Included:
+- HTML files
+- One CSS file
+- One JavaScript file: script.js
+- Submit button on Customer Information page
+- JavaScript event listener for button click
+- Callback function creates a customer object literal
+- const customers = [] array stores customer objects
+- console.clear() and console.log(customers)
+- DOM updated by displaying submitted customer data on the page
+- Name and website link appear in index.html footer
